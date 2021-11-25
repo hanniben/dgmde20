@@ -62,6 +62,15 @@ body > div {
 .three_col_grid > * {
     border: 2px solid #2b3990;
 }
+.footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.three_col_grid > * {
+    border: none;
+}
 
 #news {
     grid-column: 2/-1;
