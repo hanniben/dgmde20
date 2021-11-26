@@ -10,7 +10,7 @@
 <body>
     <div class="header_grid">
         <img id="logo" src="images/logo2_shiba.svg">
-        <h2 id="tagline">Welcome to the Culinary Cloud Network</h2>
+        <h2 id="tagline">Reviews</h2>
     </div>
 
     <div class="navigation">
@@ -21,9 +21,26 @@
         <a href="events.html">Events</a>
     </div>
 
-    <div id="large_display">
-        Reviews
+    <div class="three_col_grid">
+        <div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+            <a href="userreview1.html">Tasty Pot</a><br>
+            <a href="userreview2.html">Buffet at Encore</a><br>
+            <a href="userreview3.html">ButterMilk and Bourbon</a><br>
+        </div>
+        <div id="news">
+            <form action="submitreview.html">
+                <input type="submit" value="Submit a Review" />
+            </form>
+            Click on the links to your left to start exploring!
+        </div>
     </div>
+
     <footer>
         <div id="footer_details">
             Copyright 2021 Culinary Cloud Network
