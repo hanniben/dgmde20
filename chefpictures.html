@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chef of the Month</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+</head>
+
+<body>
+    <div class="header_grid">
+        <img id="logo" src="images/logo2_shiba.svg">
+        <h2 id="tagline">Chef of the Month</h2>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="chef.html">Chef Of The Month</a>
+        <a href="events.html">Events</a>
+    </div>
+
+    <div id="large_display">
+
+        <h2 class="chefnews">Chef of The Month Gallery</h2>
+
+        <div class="gallery">
+
+            <a href="/images/01.jpg" data-fancybox="gallery" data-caption="Randy in his Kitchen">
+                <img src="thumb/01.jpg" alt="Randy in his Kitchen" />
+            </a>
+            <a href="/images/02.jpg" data-fancybox="gallery" data-caption="Preparing Salmon">
+                <img src="thumb/02.jpg" alt="Preparing Salmon" />
+            </a>
+            <a href="/images/03.jpg" data-fancybox="gallery" data-caption="Randolfo Mendez">
+                <img src="thumb/03.jpg" alt="Randolfo Mendez" />
+            </a>
+            <a href="/images/04.jpg" data-fancybox="gallery" data-caption="Salmon Prep">
+                <img src="thumb/04.jpg" alt="Salmon Prep" />
+            </a>
+            <a href="/images/05.jpg" data-fancybox="gallery"
+                data-caption="Randolfo in his kitchen">
+                <img src="thumb/05.jpg" alt="Randolfo in his kitchen" />
+
+            </a>
+            <a href="/images/06.jpg" data-fancybox="gallery" data-caption="Getting ready for the day">
+                <img src="thumb/06.jpg" alt="Getting ready for the day" />
+            </a>
+            <a href="/images/07.jpg" data-fancybox="gallery" data-caption="Cutting">
+                <img src="thumb/07.jpg" alt="Cutting" />
+            </a>
+            <a href="/images/08.jpg" data-fancybox="gallery" data-caption="More Salmon prep">
+                <img src="thumb/08.jpg" alt="More salmon prep" />
+            </a>
+            <a href="/images/09.jpg" data-fancybox="gallery" data-caption="Pasta!">
+                <img src="thumb/09.jpg" alt="Pasta!" />
+            </a>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+
+
+
+
+
+    <footer>
+        <div id="footer_details">
+            Copyright 2021 Culinary Cloud Network
+
+        </div>
+    </footer>
+</body>
+
+</html>
