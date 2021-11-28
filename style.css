@@ -160,3 +160,7 @@ body>div {
     height: 20vw;
     object-fit: cover;
 }
+  /* Reviews page right side content */
+#reviewnews {
+    grid-column: 2/-1;
+}
