@@ -148,7 +148,6 @@ body>div {
 
 /* Reviews page remove bullets */
 #reviewsUL {
-    
     list-style-type: none;
     padding: 0;
     margin: 0;
