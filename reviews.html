@@ -20,18 +20,19 @@
         <a href="chef.html">Chef Of The Month</a>
         <a href="events.html">Events</a>
     </div>
-
+    <div id="large_display" class="review_header"></div>
+    <img src="images/reviews.jpg">
+    </div>
     <div class="three_col_grid">
         <div>
             <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Go</button>
-                </form>
+                <input type="text" id="reviewInput" onkeyup="myFunction()" placeholder="Search for names..">           
             </div>
-            <a href="userreview1.html">Tasty Pot</a><br>
-            <a href="userreview2.html">Buffet at Encore</a><br>
-            <a href="userreview3.html">ButterMilk and Bourbon</a><br>
+            <ul id="reviewsUL">
+                <li><a href="userreview1.html">Tasty Pot</a></li>
+                <li><a href="userreview2.html">Buffet at Encore</a></li>
+                <li><a href="userreview3.html">ButterMilk and Bourbon</a></li>
+            </ul>
         </div>
         <div id="news">
             <form action="submitreview.html">
