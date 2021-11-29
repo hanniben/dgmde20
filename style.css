@@ -120,9 +120,13 @@ body>div {
 }
 
 .gallery {
+  
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 5px;
+    padding-left: 100px;
+    
+    
 }
 
 .gallery img {
