@@ -167,3 +167,9 @@ body>div {
 #reviewnews {
     grid-column: 2/-1;
 }
+
+#large_display1 {
+    border: 2px solid #2b3990;
+    background-color: #E0E0E0;
+    
+}
