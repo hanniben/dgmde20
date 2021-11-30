@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Reviews</title>
-    <script src="js/reviewfilter.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,29 +18,24 @@
         <a href="chef.html">Chef Of The Month</a>
         <a href="events.html">Events</a>
     </div>
-    <div id="large_display" class="review_header"></div>
-    <img src="images/reviews.jpg">
+    <div id="large_display" class="review_header">
+    <img src="images/reviews.jpg"></div>
+    <div class="navigation">
+        <a href="submitreview.html">Submit a Review!</a>
     </div>
     <div class="three_col_grid">
-        <div>
-            <div class="search-container">
-                <input type="text" id="reviewInput" onkeyup="myFunction()" placeholder="Search for names..">           
-         
+        <div>        
             <ul id="reviewsUL">
                 <li><a href="userreview1.html">Tasty Pot</a></li>
                 <li><a href="userreview2.html">Buffet at Encore</a></li>
                 <li><a href="userreview3.html">ButterMilk and Bourbon</a></li>
             </ul>
         </div>
-        </div>
-        <div id="reviewnews">
-            <form action="submitreview.html">
-                <input type="submit" value="Submit a Review" />
-            </form>
-            Click on the links to your left to start exploring!
+        <div class="reviewnews">
+        <p>On this page, you will find reviews of restaurants submitted by users across the world! If you would like to submit a review, please click on the Submit a Review button on the top left of this page.</p>
+        <p>Click on the review links to your left to start exploring and read what users have submitted.</p>
         </div>
     </div>
-
     <footer>
         <div id="footer_details">
             Copyright 2021 Culinary Cloud Network

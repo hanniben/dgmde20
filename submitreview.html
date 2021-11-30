@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Submit a Review</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 
 <body>
@@ -22,38 +23,60 @@
     </div>
     <div id="large_display">
         <h2>Submit a Review</h2>
-        <div class="two_col_grid">
-            <form action="#" method="post">
-                <fieldset>
-                    <legend class="center">
-                        <h3>General Information</h3>
-                    </legend>
-                    <label for="name">What is your name?</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="restaurant">What is the name of the restaurant you are reviewing?</label><br>
-                    <input type="text" id="restaurant" name="restaurant"><br>
-                    <label for="loc_restaurant">Please tell us the location of this restaurant.</label><br>
+
+        <p>If you would like to submit a restaurant review, please use this form. We will review your submission prior
+            to posting.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend class="center">
+                    <h3>General Information</h3>
+                </legend>
+                <div class='form-input'>
+                    <label for="name">What is your name?</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class='form-input'>
+                    <label for="restaurant">What is the name of the restaurant you are reviewing?</label>
+                    <input type="text" id="restaurant" name="restaurant">
+                </div>
+                <div class='form-input'>
+                    <label for="loc_restaurant">Please tell us the location of this restaurant. City, State format
+                        please.</label>
                     <input type="text" id="loc_restaurant" name="loc_restaurant"><br>
-                    <div class="star-input">
-                        <input type="radio" name="rating" id="rating-5" value="5stars">
-                        <label for="rating-5">5 stars</label>
-                        <input type="radio" name="rating" id="rating-4" value="4stars">
-                        <label for="rating-4">4 stars</label>
-                        <input type="radio" name="rating" id="rating-3" value="3stars">
-                        <label for="rating-3">3 stars</label>
-                        <input type="radio" name="rating" id="rating-2" value="2stars">
-                        <label for="rating-2">2 stars</label>
-                        <input type="radio" name="rating" id="rating-1"  value="1star">
-                        <label for="rating-1">1 star</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="center">
+                    <h3>Please Submit Your Rating and Review</h3>
+                </legend>
+                <div class='form-input'>
+                    <div class="rating-css">
+                        5 is excellent, 1 is poor<br>
+                        <div class="star-icon">
+                            <input type="radio" name="rating1" id="rating1">
+                            <label for="rating1" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating2">
+                            <label for="rating2" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating3">
+                            <label for="rating3" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating4">
+                            <label for="rating4" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating5">
+                            <label for="rating5" class="fa fa-star"></label>
+                        </div>
                     </div>
-                    <label for="othercomments">Please type in a few words for your review.</label><br>
-                    <textarea rows="4" cols="50" name="othercomments"
-                        id="othercomments">Start typing your review here...</textarea><br>
-                </fieldset>
-                <p><input type="submit" name="action" value="Submit" /></p>
-                <p><input type="reset" name="action" value="Reset" /></p>
-            </form>
-        </div>
+                </div>
+                <div class='form-input'>
+                <label for="othercomments">Please type in a few words for your review.</label><br>
+                <textarea rows="4" cols="50" name="othercomments"
+                    id="othercomments">Start typing your review here...</textarea>
+                </div>
+            </fieldset>
+            <input class="buttonclick" type="submit" name="action" value="Submit" />
+            <input class="buttonclick" type="reset" name="action" value="Reset" />
+        </form>
+
+        Star rating from <a href="https://codepen.io/WebKitCoding/pen/ZEWZJoG" target="_blank">Webkit Coding</a>
     </div>
     <footer>
         <div id="footer_details">
@@ -61,4 +84,5 @@
         </div>
     </footer>
 </body>
+
 </html>
