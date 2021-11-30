@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Submit a Review</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
-
 <body>
     <div class="header_grid">
-        <img id="logo" src="images/logo2_shiba.svg">
+        <img id="logo" src="images/logo2_shiba.svg" alt="CCN logo with shiba inu">
         <h2 id="tagline">Submit a Review</h2>
     </div>
 
@@ -23,26 +21,26 @@
     </div>
     <div id="large_display">
         <h2>Submit a Review</h2>
-
         <p>If you would like to submit a restaurant review, please use this form. We will review your submission prior
             to posting.</p>
+        <p>All fields marked with * are required.</p>
         <form action="#" method="post">
             <fieldset>
                 <legend class="center">
                     <h3>General Information</h3>
                 </legend>
                 <div class='form-input'>
-                    <label for="name">What is your name?</label>
-                    <input type="text" id="name" name="name">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" aria-required=”true”>
                 </div>
                 <div class='form-input'>
-                    <label for="restaurant">What is the name of the restaurant you are reviewing?</label>
-                    <input type="text" id="restaurant" name="restaurant">
+                    <label for="restaurant">Name of the restaurant you are reviewing?*</label>
+                    <input type="text" id="restaurant" name="restaurant" aria-required=”true”>
                 </div>
                 <div class='form-input'>
-                    <label for="loc_restaurant">Please tell us the location of this restaurant. City, State format
-                        please.</label>
-                    <input type="text" id="loc_restaurant" name="loc_restaurant"><br>
+                    <label for="loc_restaurant">Location of this restaurant. City, State format
+                        please.*</label>
+                    <input type="text" id="loc_restaurant" name="loc_restaurant" aria-required=”true”><br>
                 </div>
             </fieldset>
             <fieldset>
@@ -51,32 +49,31 @@
                 </legend>
                 <div class='form-input'>
                     <div class="rating-css">
-                        5 is excellent, 1 is poor<br>
+                        Please rate the restaurant. 5 is excellent, 1 is poor.*<br>
                         <div class="star-icon">
                             <input type="radio" name="rating1" id="rating1">
-                            <label for="rating1" class="fa fa-star"></label>
+                            <label for="rating1" class="fa fa-star"> 1</label>
                             <input type="radio" name="rating1" id="rating2">
-                            <label for="rating2" class="fa fa-star"></label>
+                            <label for="rating2" class="fa fa-star"> 2</label>
                             <input type="radio" name="rating1" id="rating3">
-                            <label for="rating3" class="fa fa-star"></label>
+                            <label for="rating3" class="fa fa-star"> 3</label>
                             <input type="radio" name="rating1" id="rating4">
-                            <label for="rating4" class="fa fa-star"></label>
+                            <label for="rating4" class="fa fa-star"> 4</label>
                             <input type="radio" name="rating1" id="rating5">
-                            <label for="rating5" class="fa fa-star"></label>
+                            <label for="rating5" class="fa fa-star"> 5</label>
                         </div>
                     </div>
                 </div>
                 <div class='form-input'>
-                <label for="othercomments">Please type in a few words for your review.</label><br>
-                <textarea rows="4" cols="50" name="othercomments"
-                    id="othercomments">Start typing your review here...</textarea>
+                    <label for="othercomments">Please type in a few words for your review.*</label><br>
+                    <textarea rows="4" cols="50" name="othercomments" id="othercomments"
+                        aria-required=”true”>Start typing your review here...</textarea>
                 </div>
             </fieldset>
-            <input class="buttonclick" type="submit" name="action" value="Submit" />
-            <input class="buttonclick" type="reset" name="action" value="Reset" />
+            <input class="buttonclick" type="submit" name="action" value="Submit Your Review!" />
+            <input class="buttonclick" type="reset" name="action" value="Reset Form" />
         </form>
-
-        Star rating from <a href="https://codepen.io/WebKitCoding/pen/ZEWZJoG" target="_blank">Webkit Coding</a>
+        <p>Star rating from <a href="https://codepen.io/WebKitCoding/pen/ZEWZJoG" target="_blank">Webkit Coding</a></p>
     </div>
     <footer>
         <div id="footer_details">
@@ -84,5 +81,4 @@
         </div>
     </footer>
 </body>
-
 </html>

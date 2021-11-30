@@ -193,6 +193,7 @@ body>div {
     transform: scale(0.8);
     transition: 0.3s ease;
   }
+/*End Star Rating for User Review form*/
 
 /*Styling Fieldboxes User Review Webform*/
 .form-input{
@@ -218,6 +219,7 @@ textarea{
     margin: 1rem 1rem 1rem 1rem;
     cursor: pointer;
    }
+/*End styling Fieldboxes User Review Webform*/
 
 #large_display1 {
     border: 2px solid #2b3990;
