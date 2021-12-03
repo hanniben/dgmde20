@@ -46,6 +46,13 @@ body>div {
     border: 2px solid #2b3990;
 }
 
+/* Reviews page header image */
+.index_header img {
+    width: 90vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
 .recipe_header img {
     width: calc((90vw - 4px) / 3);
     height: 20vw;
