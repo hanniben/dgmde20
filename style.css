@@ -9,7 +9,7 @@ body>div {
 }
 
 .header_grid {
-    background-image: url("/images/clouds1.jpg");
+    background-image: url("images/clouds1.jpg");
     background-color: #cccccc;
     display: grid;
     grid-template-columns: 1fr 2fr;
