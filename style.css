@@ -132,7 +132,7 @@ body>div {
 #video {
     padding: 10px;
     padding-bottom: 30px;
-    
+
 }
 
 .links {
@@ -140,25 +140,25 @@ body>div {
     flex-direction: row;
     justify-content: center;
     column-gap: 10px;
-    
+
 
 }
 
 .gallery {
-  
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
     padding-left: 100px;
-    
-    
+
+
 }
 
 .gallery img {
-	margin: 10px;
-	border: 3px solid #000;
-	box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-	max-width: 8vw;
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    max-width: 8vw;
 }
 
 /* Reviews page remove bullets */
@@ -166,21 +166,23 @@ body>div {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
 /* Reviews page header image */
-  .review_header img {
+.review_header img {
     width: 90vw;
     height: 20vw;
     object-fit: cover;
 }
+
 /* Reviews page right side content */
 .reviewnews {
     grid-column: 2/-1;
 }
+
 /* Star Rating for User Review Webform code credit goes to https://codepen.io/WebKitCoding/pen/ZEWZJoG */
 
-  .rating-css div {
+.rating-css div {
     color: #ffe400;
     font-size: 30px;
     font-family: sans-serif;
@@ -188,71 +190,87 @@ body>div {
 
     text-transform: uppercase;
     padding: 20px 0;
-  }
-  .rating-css input {
+}
+
+.rating-css input {
     display: none;
-  }
-  .rating-css input + label {
+}
+
+.rating-css input+label {
     font-size: 20px;
     text-shadow: 1px 1px 0 #ffe400;
     cursor: pointer;
-  }
-  .rating-css input:checked + label ~ label {
+}
+
+.rating-css input:checked+label~label {
     color: #838383;
-  }
-  .rating-css label:active {
+}
+
+.rating-css label:active {
     transform: scale(0.8);
     transition: 0.3s ease;
-  }
+}
+
 /*End Star Rating for User Review form*/
 
 /*Styling Fieldboxes User Review Webform*/
-.form-input{
+.form-input {
     margin: 0 2.5rem 1.2rem 2rem;
- }
- 
+}
+
 label {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 0.5rem;
-   }
+}
 
-textarea{
+textarea {
     width: 100%;
     min-height: 6rem;
     resize: vertical;
 }
 
-.buttonclick{
+.buttonclick {
     border: 2px solid #2b3990;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
     cursor: pointer;
-   }
+}
+
 /*End styling Fieldboxes User Review Webform*/
 
 #large_display1 {
+    background-image: url("images/silverbg.jpg");
+    filter: opacit;
     border: 2px solid #2b3990;
     background-color: #E0E0E0;
-    display: grid;  
-	grid-template-columns: auto auto;  
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 div.chef {
-	margin-left: 3em;
+    margin-left: 3em;
 }
 
 h2.chef-title {
-	text-align: center;
+    color: white;
+    text-align: center;
 }
 
 img.chef-img {
-	  display: block;
-	  margin: 0 auto;
-	  width: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 p.chefnews {
-	text-align: center;
+    color: white;
+    text-align: center;
+}
+
+a {
+
+
+    color: white;
 }
