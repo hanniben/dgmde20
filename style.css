@@ -1,3 +1,58 @@
+/* styling for smaller screen sizes */
+@media screen and (max-width: 700px) {
+    .navigation > * {
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .three_col_grid {
+        display: block;
+        margin: auto;
+    }
+
+    .three_col_grid > * {
+        margin: 10px auto;
+    }
+
+    .three_col_img {
+        width: calc((90vw - 20px));
+        height: calc((90vw - 20px));
+    }
+
+    .three_col_img img {
+        height: 90vw;
+        transition: all 1s ease-in-out;
+    }
+
+}
+
+/* styling for larger screen sizes */
+@media screen and (min-width: 701px) {
+    .navigation >* {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .three_col_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .three_col_img {
+        width: calc((90vw - 20px)/3);
+        height: calc((90vw - 20px)/3);
+    }
+
+    .three_col_img img {
+        height: 30vw;
+        transition: all 1s ease-in-out;
+    }
+}
+
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 90vw;
@@ -33,8 +88,6 @@ body>div {
     height: 30px;
     border: 2px solid #2b3990;
     padding: 5px;
-    margin-right: 10px;
-    display: inline-block;
     border-radius: 5px;
     color: #2b3990;
     text-decoration: none;
@@ -44,6 +97,11 @@ body>div {
 .navigation a:hover {
     background-color: #2b3990;
     color: white;
+}
+
+.navigation p {
+    font-family: 'Gwendolyn', cursive;
+    font-size: 2em;
 }
 
 #large_display {
@@ -63,19 +121,10 @@ body>div {
     object-fit: cover;
 }
 
-
-
 .two_col_grid {
     display: grid;
     column-span: 3;
     grid-template-columns: 1fr 1fr;
-}
-
-.three_col_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
 }
 
 .three_col_grid>* {
@@ -83,15 +132,8 @@ body>div {
 }
 
 .three_col_img {
-    width: calc((90vw - 20px)/3);
-    height: calc((90vw - 20px)/3);
     overflow: hidden;
     position: relative;
-}
-
-.three_col_img img {
-    height: 30vw;
-    transition: all 1s ease-in-out;
 }
 
 .three_col_img img:hover {
@@ -108,6 +150,10 @@ body>div {
     color: white;
     background: #2b3990;
     pointer-events: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Gwendolyn', cursive;
 }
 
 #news {
@@ -273,4 +319,8 @@ a {
 
 
     color: white;
+}
+
+.three_col_grid a {
+    color: #2b3990;
 }
