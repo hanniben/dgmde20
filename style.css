@@ -244,8 +244,8 @@ body>div {
 /* Star Rating for User Review Webform code credit goes to https://codepen.io/WebKitCoding/pen/ZEWZJoG */
 
 .rating-css div {
-    color: #a8a267;
-    font-size: 30px;
+    color: #817e5f;
+    font-size: 40px;
     font-family: sans-serif;
     font-weight: 800;
 
@@ -258,8 +258,8 @@ body>div {
 }
 
 .rating-css input+label {
-    font-size: 20px;
-    text-shadow: 1px 1px 0 #ffe400;
+    font-size: 30px;
+    text-shadow: 1px 1px 0 #cab600;
     cursor: pointer;
 }
 
