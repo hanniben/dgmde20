@@ -1,6 +1,6 @@
 /* styling for smaller screen sizes */
 @media screen and (max-width: 700px) {
-    .navigation > * {
+    .navigation>* {
         margin-bottom: 10px;
         display: block;
         text-align: center;
@@ -11,7 +11,7 @@
         margin: auto;
     }
 
-    .three_col_grid > * {
+    .three_col_grid>* {
         margin: 10px auto;
     }
 
@@ -25,11 +25,17 @@
         transition: all 1s ease-in-out;
     }
 
+    /*User Reviews two column grid */
+    .user_two_col_grid {
+        display: block;
+        margin: auto;
+    }
+
 }
 
 /* styling for larger screen sizes */
 @media screen and (min-width: 701px) {
-    .navigation >* {
+    .navigation>* {
         display: inline-block;
         margin-right: 10px;
     }
@@ -50,6 +56,14 @@
         height: 30vw;
         transition: all 1s ease-in-out;
     }
+
+    /*User Reviews two column grid */
+    .user_two_col_grid {
+        display: grid;
+        column-span: 3;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 
@@ -114,6 +128,7 @@ body>div {
     height: 20vw;
     object-fit: cover;
 }
+
 
 .recipe_header img {
     width: calc((90vw - 4px) / 3);
@@ -229,7 +244,7 @@ body>div {
 /* Star Rating for User Review Webform code credit goes to https://codepen.io/WebKitCoding/pen/ZEWZJoG */
 
 .rating-css div {
-    color: #ffe400;
+    color: #a8a267;
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 800;
@@ -348,8 +363,14 @@ p.chefnews {
 .eventList ul li .date {
     box-sizing: border-box;
     padding: 20px;
-    background: #f1f1f1;
-    color: #2b3990;
+    background: #2b3990;
+    color: #f1f1f1;
     float: clear;
     text-align: center;
+    font-size: 1.2rem;
 }
+
+.dateandtime {
+    font-weight: bold;
+}
+/*End Styling of individual event boxes*/
