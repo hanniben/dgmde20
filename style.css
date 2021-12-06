@@ -330,7 +330,7 @@ p.chefnews {
     text-align: center;
 }
 
-.links a {
+.chef a {
 
 
     color: white;
@@ -338,6 +338,10 @@ p.chefnews {
 
 .three_col_grid a {
     color: #2b3990;
+}
+
+.three_col_grid p, #large_display p, #news {
+    padding: 16px;
 }
 
 /*Styling of individual event boxes*/
