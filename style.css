@@ -1,5 +1,5 @@
 /* styling for smaller screen sizes */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .navigation>* {
         margin-bottom: 10px;
         display: block;
@@ -34,7 +34,7 @@
 }
 
 /* styling for larger screen sizes */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 601px) {
     .navigation>* {
         display: inline-block;
         margin-right: 10px;
