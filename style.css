@@ -29,6 +29,7 @@
     .user_two_col_grid {
         display: block;
         margin: auto;
+        padding: 10px;
     }
 
     #large_display1 {
@@ -101,6 +102,7 @@
         display: grid;
         column-span: 3;
         grid-template-columns: 1fr 1fr;
+        padding: 10px;
     }
 
 }
