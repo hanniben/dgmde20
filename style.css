@@ -31,6 +31,41 @@
         margin: auto;
     }
 
+    #large_display1 {
+        background-image: url("images/silverbg.jpg");
+        border: 2px solid #2b3990;
+        background-color: #E0E0E0;
+        display: grid;
+        column-span: 1;
+        
+    }
+
+    div.chef {
+        margin-left: 3em;
+    }
+
+    h2.chef-title {
+        color: white;
+        text-align: center;
+    }
+
+    img.chef-img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    p.chefnews {
+        font-size: smaller;
+        color: white;
+        text-align: center;
+    }
+
+    .chef a {
+        color: white;
+    }
+
+    
 }
 
 /* styling for larger screen sizes */
@@ -340,7 +375,9 @@ p.chefnews {
     color: #2b3990;
 }
 
-.three_col_grid p, #large_display p, #news {
+.three_col_grid p,
+#large_display p,
+#news {
     padding: 16px;
 }
 
@@ -377,4 +414,5 @@ p.chefnews {
 .dateandtime {
     font-weight: bold;
 }
+
 /*End Styling of individual event boxes*/
