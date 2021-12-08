@@ -38,7 +38,7 @@
         background-color: #E0E0E0;
         display: grid;
         column-span: 1;
-        
+
     }
 
     div.chef {
@@ -53,7 +53,7 @@
     img.chef-img {
         width: 50px;
         height: 150px;
-      
+
     }
 
     p.chefnews {
@@ -65,12 +65,12 @@
     .chef a {
         color: white;
     }
-    
+
     .video {
         display: none;
 
     }
-    
+
 }
 
 /* styling for larger screen sizes */
@@ -184,6 +184,7 @@ body>div {
 }
 
 .three_col_grid>* {
+    background-color: #00FFFF;
     border: 2px solid #2b3990;
 }
 
@@ -213,7 +214,12 @@ body>div {
 }
 
 #news {
+
     grid-column: 2/-1;
+}
+
+h1 {
+    font-family: 'Gwendolyn', cursive;
 }
 
 #footer_details {
@@ -230,10 +236,9 @@ body>div {
     align-items: center;
 
 }
-
-#video {
-    padding: 10px;
-    padding-bottom: 30px;
+.video {
+    padding: 50px;
+    padding-bottom: 10px;
 
 }
 
@@ -356,6 +361,8 @@ div.chef {
 }
 
 h2.chef-title {
+    font-family: 'Gwendolyn', cursive;
+    font-size: 50px;
     color: white;
     text-align: center;
 }
@@ -364,6 +371,7 @@ img.chef-img {
     display: block;
     margin: 0 auto;
     width: 50%;
+    border-radius: 8px;
 }
 
 p.chefnews {
