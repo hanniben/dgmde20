@@ -33,7 +33,7 @@
     }
 
     #large_display1 {
-        background-image: url("images/silverbg.jpg");
+        background-image: url("images/ttbg.jpg");
         border: 2px solid #2b3990;
         background-color: #E0E0E0;
         display: grid;
@@ -366,7 +366,16 @@ textarea {
 /*End styling Fieldboxes User Review Webform*/
 
 #large_display1 {
-    background-image: url("images/silverbg.jpg");
+    background-image: url("images/bush.png");
+    filter: opacit;
+    border: 2px solid #2b3990;
+    background-color: #E0E0E0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#large_display2 {
+    background-image: url("images/bush.png");
     filter: opacit;
     border: 2px solid #2b3990;
     background-color: #E0E0E0;
@@ -378,10 +387,10 @@ div.chef {
     margin-left: 3em;
 }
 
-h2.chef-title {
+h1.chef-title {
     font-family: 'Gwendolyn', cursive;
     font-size: 50px;
-    color: white;
+    font-weight: bolder;
     text-align: center;
 }
 
@@ -393,15 +402,15 @@ img.chef-img {
 }
 
 p.chefnews {
-    color: white;
+
     text-align: center;
 }
 
-.chef a {
+/* .chef a {
 
 
-    color: white;
-}
+
+} */
 
 
 
