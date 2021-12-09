@@ -222,6 +222,22 @@ h1 {
     font-family: 'Gwendolyn', cursive;
 }
 
+/*Clouds bg for divs*/
+.clouds_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/clouds1.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.30;
+}
+#news, .rel_container, .reviewnews{
+    position: relative;
+}
+/*end Clouds bg for divs*/
+
 #footer_details {
     margin: 20px;
     border: none;
