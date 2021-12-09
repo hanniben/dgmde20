@@ -229,7 +229,7 @@ body>div {
     font-family: 'Gwendolyn', cursive;
 }
 
-#news {
+#news, .recipe_grid {
 
     grid-column: 2/-1;
 }
