@@ -57,13 +57,7 @@
     }
 
     p.chefnews {
-        font-size: smaller;
-        color: white;
         text-align: center;
-    }
-
-    .chef a {
-        color: white;
     }
 
     .video {
@@ -112,6 +106,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 90vw;
     margin: auto;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 body>div {
@@ -199,7 +195,7 @@ body>div {
     z-index: -1;
     opacity: 0.30;
 }
-#news, .rel_container, .reviewnews{
+#news, .rel_container, .reviewnews, .recipe_grid{
     position: relative;
 }
 /*end Clouds bg for divs*/
@@ -419,6 +415,8 @@ p.chefnews {
 }
 
 .three_col_grid p,
+.three_col_grid h3,
+#large_display h2,
 #large_display p,
 #news {
     padding: 16px;
